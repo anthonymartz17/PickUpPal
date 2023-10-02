@@ -1,38 +1,27 @@
 <template>
   <div>
-    <!-- <Tutorial /> -->
-    <div>
-      asdfads
-      {{ maps }}
-    </div>
+    <header>
+      <div>PickupPal</div>
+      <button>Login</button>
+    </header>
+    <main>
+      <section>
+        <p>We are here to help you</p>
+        <h2>Get more rides</h2>
+      </section>
+      <div>
+        <p>Scroll to explore</p>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-  data() {
-    return {
-      maps:null,
-    }
-  },
-  async asyncData(context) {
-    try {
-      const response = await context.$axios.$get({
-        // headers: {
-          //   Authorization: 'Bearer YOUR_API_KEY',
-          // },
-        })
-        console.log(response)
 
-      // Handle the response data
-      return { maps: response }
-
-      // ...
-    } catch (error) {
-      // Handle errors
-      console.error('Error:', error)
-    }
-  },
 }
 </script>
+
+<style>
+
+</style>
